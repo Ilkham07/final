@@ -1,0 +1,1299 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Merriweather:ital,wght@1,300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/abai/2020_09_23_abay-qayran-elim-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #33ff00;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Banknote of the National Bank of Kazakhstan, 1993";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 1000px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 300px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+
+
+
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+/* Section Packages End */
+
+
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+
+
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+
+
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+/* About End */
+
+
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
+html, body{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+/* Измененный стиль кнопок */
+.btn-primary {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    width: 100%; /* Ширина кнопок 100% для растяжения на всю доступную ширину контейнера */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Измененный стиль модальных окон */
+.modal-content {
+    background-color: #f5f5f5;
+}
+
+.modal-header {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.modal-body {
+    font-size: 18px;
+}
+
+.modal-footer {
+    background-color: #f5f5f5;
+}
+
+bg img {
+    min-height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width:100vw;
+}
+
+.containerMain {
+    max-width: 1800px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; 
+}
+
+
+img[alt="derbes"] {
+    max-width: 90px;
+}
+
+.header .first{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .first .navbar li{
+    font-size: 18px;
+    font-weight: 600;
+}
+.header .first .navbar li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Second*/
+
+.header .second{
+    display: flex;
+    align-items: center;
+    /* align-items: dpcenter; */
+}
+
+.header .second .FindStore {
+    /* padding-right: 80px; */
+}
+
+.header .second .FindStore a{
+    text-decoration: none;
+    color: black;
+}
+
+.header .second .Login{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 80px;
+    margin-right: 30px;
+}
+
+.header .second .Login .btn1:hover,
+.header .second .Login .btn1:active {
+    cursor: pointer;
+}
+
+.header .second .Login .btn1{
+    border: 1px solid black;
+    padding: 8px 15px ;
+    border-radius: 20px;
+    border: 0px;
+    background: white; 
+    text-align: center; 
+    border: 2px solid #067540;
+    /* box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); */
+}
+
+.header .second .Login .btn1 a{
+    text-decoration: none;
+    color: green;
+}
+
+.header .second .Register{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.header .second .Register .btn2:hover,
+.header .second .Register .btn2:active{
+    cursor: pointer;
+}
+
+.header .second .Register .btn2{
+    border: 1px solid black;
+    padding: 8px 15px ;
+    border-radius: 20px;
+    border: 0px;
+    background: white; 
+    text-align: center; 
+    border: 2px solid #067540;
+    /* box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5); */
+}
+
+.header .second .Register a{
+    text-decoration: none;
+    color: green;
+}
+
+
+hr{
+    margin-bottom: 20px;
+}
+
+
+main img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+}
+
+
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer .section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer .section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+  /* Изменение цвета текста */
+  footer {
+    background-color: #333; /* Измените цвет фона, если нужно */
+    color: white; /* Измените цвет текста, если нужно */
+  }
+
+  /* Анимация для элементов */
+  .col-3 {
+    transition: background-color 0.3s ease-in-out; /* Анимация изменения цвета фона */
+  }
+
+  .col-3:hover {
+    background-color: #555; /* Измените цвет фона при наведении мыши */
+  }
+
+    
+  /* Стили для кнопок аккордеона */
+  .accordion-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #3498db; /* Добавление рамки */
+  }
+
+  .accordion-button:hover {
+    background-color: #2980b9;
+  }
+
+  /* Стили для контента аккордеона */
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #3498db; /* Добавление рамки */
+  }
+
+ 
+  /* Стили для текста, который будет перемешиваться */
+  .shuffle-text {
+    font-size: 24px;
+    animation: shuffle 3s infinite alternate;
+  }
+
+  .card {
+    border: 1px solid #ddd; /* Граница карточки */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.2s; /* Плавное увеличение при наведении */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Увеличение при наведении мыши */
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Заполнение изображения по размеру контейнера */
+  }
+  .card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #c2db34; /* Цвет заголовка */
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555; /* Цвет текста */
+  }
+  .row {
+    margin-top: 30px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .col-md-4 {
+    padding: 0 15px;
+  }
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* Стили для заголовка */
+.display-1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили для изображения */
+.img-fluid {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Общие стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для контейнера */
+.container {
+    padding: 30px;
+}
+
+/* Стили для заголовка */
+.display-1 {
+    font-size: 360px;
+    font-weight: bold;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Стили для кнопок */
+.btn-secondary {
+    background-color: #ffcc00; /* Желтый цвет для фона */
+    color: #000; /* Черный цвет для текста */
+    border: none; /* Убрать границу кнопки */
+}
+
+.btn-secondary:hover {
+    background-color: #ff9900; /* Цвет при наведении */
+    color: #fff; /* Цвет текста при наведении */
+}
+
+/* Стили для контейнера */
+.row .p-5 {
+    background-color: #f2f2f2; /* Цвет фона контейнера */
+    border-radius: 10px; /* Закруглить углы контейнера */
+    padding: 20px; /* Поля внутри контейнера */
+}
+
+
+
+:root {
+    /* Color Variables */
+    --primary: #ffc400;
+    --text-1: #0f2341;
+    --text-2: #a9a9a9;
+    --white: #fff;
+    --shadow-300: 0 5px 5px rgba(0, 0, 0, 0.3);
+    --shadow-500: 0 5px 5px rgba(0, 0, 0, 0.5);
+    --transition-300: all 300ms ease-in-out;
+    --transition-500: all 500ms ease-in-out;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40;
+    font-weight: 400;
+    background-color: var(--white);
+    color: var(--text-1);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--text-1);
+  }
+  
+  p {
+    color: var(--text-2);
+    line-height: 1.5;
+  }
+  
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+  } */
+  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #485461;
+  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+  overflow-x: hidden;
+  transform-style: preserve-3d;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 3rem;
+}
+
+.menu {
+  max-width: 72rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 4rem;
+}
+
+.logo span {
+  font-weight: 300;
+}
+
+.hamburger-menu {
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar {
+  width: 1.9rem;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: #eee;
+  transition: 0.5s;
+  position: relative;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: #eee;
+  transition: 0.5s;
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+.bar:after {
+  transform: translateY(9px);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+header {
+  min-height: 100vh;
+  width: 100%;
+  background: url("/abai/2020_09_23_abay-qayran-elim-1.jpg") no-repeat top center / cover;
+
+  position: relative;
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(43, 51, 59, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  max-width: 35rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.title {
+  font-size: 2.7rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.8rem;
+  background-color: #1179e7;
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container.active .bar {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+
+.container.active .bar:before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar:after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main {
+  animation: main-animation 0.5s ease;
+  cursor: pointer;
+  transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+}
+
+.links {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: #eee;
+  padding: 0.7rem 0;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 3000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: hide 0.5s forwards ease;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.container.active .links a {
+  animation: appear 0.5s forwards ease var(--i);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.shadow.one {
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.shadow.two {
+  z-index: -2;
+  opacity: 0.1;
+}
+
+.container.active .shadow.one {
+  animation: shadow-one 0.6s ease-out;
+  transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+}
+
+@keyframes shadow-one {
+  0% {
+    transform: translate(0);
+  }
+
+  5% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+  }
+}
+
+.container.active .shadow.two {
+  animation: shadow-two 0.6s ease-out;
+  transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two {
+  0% {
+    transform: translate(0);
+  }
+
+  20% { 
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
+
+  100% {
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+  }
+}
+
+.container.active .main:hover + .shadow.one {
+  transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
+}
+
+.container.active .main:hover {
+  transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+}
+
+/* =========== Footer ============ */
+.footer {
+    background-color: var(--text-1);
+  }
+  
+  .footer .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 7rem 3rem;
+  }
+  
+    .footer .row .col:last-child {
+        display: grid;
+        height: 10rem;
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+        gap: 2rem;
+    }
+  
+  .footer .row .col:last-child img {
+    height: 10rem;
+  }
+  
+  .footer .row .col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .row .col h3 {
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+  
+  .footer .row .col a {
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .row {
+      row-gap: 7rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .footer .row {
+      gap: 4rem 0;
+      grid-template-columns: 1fr;
+    }
+  }
+/* Style for the social links container */
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px; /* Adjust the width according to your design */
+  }
+  
+  /* Style for the social icons */
+  .social-links i {
+    font-size: 24px; /* Adjust the font size according to your design */
+    color: #333; /* Adjust the color according to your design */
+    margin: 0 5px; /* Adjust the margin between icons */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  
+  /* Add scale animation on hover */
+  .social-links i:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+  }
+  
+/* Style for the main container */
+.container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the heading */
+  h2 {
+    color: #007bff;
+    font-size: 28px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  /* Style for the section containing Abai Kunanbayev's introduction */
+  section {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Style for the tab navigation */
+  .nav-pills {
+    width: 250px;
+    background-color: #c5c7ca;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Style for active and hover states of the tab */
+  .nav-link {
+    color: #fff;
+    font-size: 160px;
+    margin-bottom: 500px;
+  }
+  
+  .nav-link.active,
+  .nav-link:hover {
+    background-color: 
+    #f6fafd;
+  }
+  
+  /* Style for the tab content */
+  .tab-pane {
+    padding: 150px;
+    border: 2px solid #ddd;
+    border-radius: 100px;
+    margin-top: 150px;
+    font-size: 160px;
+    color: #333;
+  }
+  
+  /* Style for the "Learn more" button */
+  .btn-outline-success {
+    margin-top: 300px;
+    font-size: 18px;
+    color: #dadddf;
+    border-color: #e7ebee;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .nav-pills {
+      width: 100%;
+    }
+  }
+  /* Style for the tab navigation */
+.nav-pills {
+    width: 300px; /* Increased width */
+    background-color: #f0f1f2;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  /* Style for active and hover states of the tab */
+  .nav-link {
+    color: #fff;
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 10px;
+    padding: 10px; /* Increased padding */
+    border-radius: 8px; /* Increased border radius */
+  }
+  
+  .nav-link.active,
+  .nav-link:hover {
+    background-color: #d0d0d0;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .nav-pills {
+      width: 100%;
+    }
+  }
+  /* Style for the tab content */
+.tab-pane {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff; /* Set background color to white */
+  }
+  
+  .btn-outline-success {
+    color: #2835a7;
+    border-color: #2835a7;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color:#2835a7;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.audio-btn {
+  cursor: pointer;
+  font-size: 24px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#audio-icon {
+  margin-left: 8px;
+}
